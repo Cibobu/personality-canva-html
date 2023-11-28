@@ -15,13 +15,14 @@
             padding: 0;
         }
         .container {
+            overflow: hidden;
+            border: 1px solid #4a48ba;
             position: relative;
             height:1920px; 
             width: 1080px; 
             margin: auto; 
             background-color: #FFFFFF;
             background: url('assets/background/BG-1.png') center/cover no-repeat; 
-            /* border: 1px solid red; */
         }
         .name_wrapper {
             
@@ -47,9 +48,28 @@
             
         }
 
-        .mobil_kijang_shape_wraper > svg {
-            position:static;
+        .mobil_kijang_shape_wraper > svg{
+            /* position:static; */
+            /* backdrop-filter: blur(24px);
+            border: 1px solid red;
+            overflow: hidden; */
             /* transform: translate(-50%, -50%); */
+        }
+        #kijang_shape {
+            /* fill: #FFF;
+            /* backdrop-filter: blur(24px); */
+            /* filter: blur(10px); */
+            /* opacity: .5;  */
+        }
+        .clipped {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            bottom: 0;
+            right: 0;
+            clip-path: url(#kijang_shape);
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(100px);
         }
 
         .mobil_kijang_shape_wraper .content_wrapper {
@@ -330,18 +350,11 @@
         </div>
         <div class="mobil_kijang_shape_wraper">
             <svg xmlns="http://www.w3.org/2000/svg" width="999" height="465" viewBox="0 0 999 465" fill="none">
-                <g filter="url(#filter0_b_108_555)">
-                  <path d="M60 0C26.8629 0 0 26.8629 0 60V405C0 438.137 26.8629 465 60 465H939C972.137 465 999 438.137 999 405V320C999 275.817 963.183 240 919 240H839C794.817 240 759 204.183 759 160V80C759 35.8172 723.183 0 679 0L60 0Z" fill="white" fill-opacity="0.5"/>
-                </g>
-                <defs>
-                  <filter id="filter0_b_108_555" x="-200" y="-200" width="1399" height="865" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="100"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_108_555"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_555" result="shape"/>
-                  </filter>
-                </defs>
-              </svg>
+                <clipPath id="kijang_shape">
+                    <path d="M60 0C26.8629 0 0 26.8629 0 60V405C0 438.137 26.8629 465 60 465H939C972.137 465 999 438.137 999 405V320C999 275.817 963.183 240 919 240H839C794.817 240 759 204.183 759 160V80C759 35.8172 723.183 0 679 0L60 0Z"/>
+                </clipPath>
+            </svg>
+            <div class="clipped"></div>
               <div class="content_wrapper">
                 <div class="category_1">
                     <div class="list_title">
