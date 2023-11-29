@@ -14,13 +14,19 @@
             margin: 0;
             padding: 0;
         }
+        body {
+            height:1920px; 
+            width: 1080px; 
+            padding: 20px;
+            border: 1px solid red;
+        }
         .container {
             position: relative;
             height:1920px; 
             width: 1080px; 
             margin: 0 auto; 
             background-color: #FFFFFF; 
-            padding: 20px;
+            /* padding: 20px; */
             background: url('assets/background/bg-2023.png') center/cover no-repeat; 
         }
         .star_header_container {
@@ -50,7 +56,8 @@
             align-self: center;
             border-radius: 40px;
             border: 1px solid #B2B2B2;
-            padding: 30px 120px;
+            padding: 20px 120px;
+            margin-right: 30px;
         }
         .category_wrapper .category {
             color: #24282D;
@@ -66,6 +73,7 @@
             align-items: center;
             justify-content: space-between;
             width: 95%;
+            padding: 0 20px;
             margin-bottom: 230px;
         }
         .big_recap_title_wrapper .recap_title {
@@ -95,6 +103,7 @@
             background-color: #000;
             padding: 50px 60px;
             color: white;
+            margin: 0 20px;
             margin-bottom: 10px;
         }
         .left_wrapper, .right_wrapper, .line_center {
@@ -129,6 +138,7 @@
         }
     </style>
 </head>
+<body>
     <div class="container">
         <img src="assets/dummy/user_image.png" alt="" style="position:absolute;z-index: -10; width: 1080px;">
         <div class="star_header_container">
@@ -189,4 +199,5 @@
             </div>
         </div>
     </div>
+</body>
 </html>
