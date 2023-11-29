@@ -23,7 +23,6 @@
             background-color: #FFFFFF;
             background: url('assets/background/BG-2.png') center/cover no-repeat; 
         }
-        
         .name_wrapper {
             
         }
@@ -40,115 +39,24 @@
             margin: 0;
         }
 
-        .mobil_kijang_shape_wraper {
+        .rectangle_container {
+            border-radius: 60px;
+            width: 720px;
+            height: 184px;
+            background: rgba(255, 255, 255, 0.557);
+            backdrop-filter: blur(100px);
             text-align: center;
             position: relative;
-            top: 1028px;/*695*/
-        }
-
-        .clipped {
-            position: absolute;
-            top: 0;
             left: 40px;
-            bottom: 0;
-            right: 0;
-            clip-path: url(#kijang_shape);
-            background: rgba(255,255,255,0.25);
-            backdrop-filter: blur(100px);
+            top: 1270px;/*695*/
+            padding: 20px;
         }
-
-        .mobil_kijang_shape_wraper .content_wrapper {
-            text-align: left;
-            margin: 0 285px 0 40px;
-            position: absolute;
-            top: 0;
-            padding: 30px;
-
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .category_1, .category_2, .category_3 {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .category_1 {
-            margin-right: 207px;
-        }
-
-        .category_2, .category_3 {
-            flex-wrap: nowrap;
-        }
-
-        .category_1 .list_title {
-            width: 170px;
-            min-height: 50px;
-            color: #000;
-            font-family: Space Grotesk;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px; /* 100% */
-
-            border-radius: 40px;
-            border: 1px solid #B2B2B2;
-            padding: 10px 40px ;
-        }
-
-        .list_item {
-            min-height: 50px;
-            background-color: #FFF;
-            color: #000;
-            font-family: Poppins;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 32px; /* 100% */
-            text-align: center;
-            text-wrap:nowrap;
-            
-            display: flex;
-            align-items: center;
-
-            border-radius: 40px;
-            padding: 10px 40px ;
-        }
-
-        .category_2 .list_title {
-            text-wrap: nowrap;
-            min-height: 50px;
-            color: #000;
-            font-family: Space Grotesk;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px; /* 100% */
-            
-            display: flex;
-            align-items: center;
-
-            border-radius: 40px;
-            border: 1px solid #B2B2B2;
-            padding: 10px 40px ;
-        }
-
-        .mobil_kijang_shape_wraper .icon_love_language_wrapper {
-            width: 160px;
-            height: 160px;
-            flex-shrink: 0;
-            border-radius: 40px;
-            background: #F5CCCC;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .mobil_kijang_shape_wraper .description_love_language{
-            width: 685px;
-            padding: var(--dialog, 20px) 40px;
+    
+        .description_love_language{
+            /* margin: 40px; */
+            /* left: 40px; */
+            height: inherit;
+            /* margin-bottom: 20px; */
             border-radius: 40px;
             background: var(--color-white, #FFF);
 
@@ -158,12 +66,15 @@
             font-style: normal;
             font-weight: 400;
             line-height: 40px; /* 125% */
+
+            display: flex;
+            align-items: center;
         }
 
         .personal_category_container {
             position: absolute;
             right: 40px;
-            top: 1093px
+            top: 1338px
         }
 
         .personal_category_container .top {
@@ -203,7 +114,7 @@
             margin: auto;
             width: 85%;
             position: relative;
-            top:1060px;
+            top: 1305px;
             border-radius: 74px;
             height: 110px;
             margin: 0 20px;
@@ -252,51 +163,11 @@
         <div class="name_wrapper">
             <h1 class="name">Mars</h1>
         </div>
-        <div class="mobil_kijang_shape_wraper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="999" height="465" viewBox="0 0 999 465" fill="none">
-                <clipPath id="kijang_shape">
-                    <path d="M60 0C26.8629 0 0 26.8629 0 60V405C0 438.137 26.8629 465 60 465H939C972.137 465 999 438.137 999 405V320C999 275.817 963.183 240 919 240H839C794.817 240 759 204.183 759 160V80C759 35.8172 723.183 0 679 0L60 0Z"/>
-                </clipPath>
-            </svg>
-            <div class="clipped"></div>
-              <div class="content_wrapper">
-                <div class="category_1">
-                    <div class="list_title">
-                        Things that I love...
-                    </div>
-                    <div class="list_item">
-                        ⚪ Silver
-                    </div>
-                    <div class="list_item">
-                        🤖 Tech
-                    </div>
-                    <div class="list_item">
-                        🗽 City
-                    </div>
-                    <div class="list_item">
-                        🥬 Salad
-                    </div>
-                    <div class="list_item">
-                        Casual
-                    </div>
-                </div>
-                <div class="category_2">
-                    <div class="list_title">
-                        My love language...
-                    </div>
-                    <div class="list_item">
-                        Word of Affirmation
-                    </div>
-                </div>
-                <div class="category_3">
-                    <div class="icon_love_language_wrapper">
-                        <img src="assets/love_language_images/word_of_affirmation.png" alt="">
-                    </div>
-                    <div class="description_love_language">
-                        I'm your sunshine, spreading warmth, cherishing moments with loved ones, and always up for a good laugh!
-                    </div>
-                </div>
-              </div>
+
+        <div class="rectangle_container">
+            <div class="description_love_language">
+                I'm your sunshine, spreading warmth, cherishing moments with loved ones, and always up for a good laugh!
+            </div>
         </div>
 
         <div class="personal_category_container">
