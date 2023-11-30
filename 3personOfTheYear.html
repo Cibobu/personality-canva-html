@@ -17,14 +17,13 @@
         body {
             height:1920px; 
             width: 1080px; 
-            /* padding: 20px; */
-            border: 2px solid blue;
+            margin: 0;
         }
         .container {
             position: relative;
             height:1920px; 
             width: 1080px; 
-            margin: 0 auto; 
+            margin: 0; 
             /* padding: 20px; */
             background: url('assets/background/bg-cream-radial.png') center/cover no-repeat;
         }
@@ -32,7 +31,7 @@
             /* margin-top: 43px; */
             padding-top: 43px;
             margin-left: 43px;    
-            margin-bottom: 15px;
+            margin-bottom: 55px;
         }
         .logo_untukmu_small {
             /* border: 1px solid #000; */
@@ -54,7 +53,7 @@
             /* border: 1px solid red; */
             margin: auto;
             text-align: center;
-            top: 130px;
+            top: 110px;
         }
         .title_behind, .title_front {
             position: absolute;
@@ -70,14 +69,11 @@
             line-height: 180px; /* 90% */
             text-transform: uppercase;
             -webkit-text-stroke: 4px #604FAB; /* Width and color of the stroke for WebKit browsers like Chrome and Safari */
-            z-index: 999999999999;
+            z-index: 99;
         }
         .title_front {
             color: #604FAB;
-            /* position: static; */
-            
             z-index: 0 !important;
-            /* background: red; */
         }
 
         #absolute_card_wrapper_1{
@@ -118,7 +114,7 @@
         .boxphoto_wrapper_3 {
             transform: rotate(-15deg);
         }
-        .absolute_card_wrapper img {
+        .absolute_card_wrapper .photo_person {
             background: lightgray 50% / cover no-repeat;
             width: inherit;
         }
@@ -172,6 +168,58 @@
             top: -60px;
             left: -100px;
         }
+        #status_1, #status_2, #status_3{
+            position: relative;
+            color: #3D4152;
+            font-family: Space Grotesk;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+        #status_2 {
+            left: 320px;
+            top: -79px;
+        }
+        #status_3 {
+            left: -92px;
+            top: -215px;
+        }
+
+        .leaf_wrapper {
+            position: absolute;
+            right: -53px;
+            z-index: 10;
+            width: 194.069px;
+            height: 200px;
+        }
+        .bottle_wrapper {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 700px;
+            left: -74px;
+        }
+        .bottle_wrapper img{
+            width: inherit;
+            height: inherit;
+            transform: rotate(90deg);
+        }
+        .recap_2023_text {
+            position: absolute;
+            width: 223px;
+            color: #F6AE70;
+            font-family: Space Grotesk;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; /* 100% */
+            text-transform: uppercase;
+
+            bottom: 300px;
+            left: 40px;
+        }
 
         .footer_wrapper {
             border-radius: 74px;
@@ -186,7 +234,7 @@
             padding: 50px 60px;
             color: white;
             margin: 0 20px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .left_wrapper, .right_wrapper, .line_center {
             opacity: 50%;
@@ -240,31 +288,47 @@
         </div>
 
         <div class="absolute_card_wrapper" id="absolute_card_wrapper_1">
+            <div class="leaf_wrapper">
+                <img src="assets/four_leaf_clover.png" alt="">
+            </div>
             <div class="photo_numbering_1">01</div>
             <div class="boxphoto_wrapper_1">
-                <img class="photo_1" src="assets/dummy/user_image.png" alt="">
+                <img class="photo_person" id="photo_1" src="assets/dummy/user_image.png" alt="">
             </div>
             <div class="name_tag_1">
                 John
             </div>
         </div>
+        <div class="bottle_wrapper">
+            <img src="assets/bottle_with_popping_cork.png" alt="">
+        </div>
         <div class="absolute_card_wrapper" id="absolute_card_wrapper_2">
             <div class="photo_numbering_2">02</div>
             <div class="boxphoto_wrapper_2">
-                <img class="photo_1" src="assets/dummy/user_image.png" alt="">
+                <img class="photo_person" id="photo_2" src="assets/dummy/user_image.png" alt="">
             </div>
             <div class="name_tag_2">
                 Putra
+            </div>
+            <div id="status_2">
+                BROTHER
             </div>
         </div>
         <div class="absolute_card_wrapper" id="absolute_card_wrapper_3">
             <div class="photo_numbering_3">03</div>
             <div class="boxphoto_wrapper_3">
-                <img class="photo_3" src="assets/dummy/user_image.png" alt="">
+                <img class="photo_person" id="photo_3" src="assets/dummy/user_image.png" alt="">
             </div>
             <div class="name_tag_3">
                 Alexandra
             </div>
+            <div id="status_3">
+                Best-Friend
+            </div>
+        </div>
+
+        <div class="recap_2023_text">
+            2023 Recap!
         </div>
         
 
