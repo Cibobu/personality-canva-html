@@ -116,9 +116,12 @@
             transform: rotate(-15deg);
         }
         .absolute_card_wrapper .photo_person {
-            background: lightgray 50% / cover no-repeat;
+            background: lightgray 50%;
+            object-fit: cover;
             background-position: center;
-            width: inherit;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
         }
         .photo_numbering_1, .photo_numbering_2, .photo_numbering_3 {
             color: var(--color-white, #FFF);
