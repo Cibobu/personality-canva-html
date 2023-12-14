@@ -69,7 +69,7 @@
             font-weight: 700;
             line-height: 180px; /* 90% */
             text-transform: uppercase;
-            -webkit-text-stroke: 4px #604FAB; /* Width and color of the stroke for WebKit browsers like Chrome and Safari */
+            -webkit-text-stroke: 5px #604FAB; /* Width and color of the stroke for WebKit browsers like Chrome and Safari */
             z-index: 99;
         }
         .title_front {
@@ -145,7 +145,33 @@
             left: 250px;
             bottom: -35px;
         }
-        .name_tag_1, .name_tag_2, .name_tag_3 {
+        .name_tag_wrapper_1 {
+            width: 389px;
+            position: absolute;
+            top: 485px;
+            right: -34px;
+            text-align: end !important;
+            align-items: end !important;
+            display:inline;
+            justify-content: center;
+        }
+        .name_tag_1 {
+            max-width: 360px;
+            text-wrap: nowrap;
+            display: inline-flex;
+            padding: 30px 60px;
+            align-items: center;
+            text-align: center;
+            border-radius: 60px;
+            background: var(--color-white, #FFF);
+            color: #000;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px; /* 100% */
+        }
+        .name_tag_2, .name_tag_3 {
             position: relative;
             display: inline-flex;
             padding: 30px 60px;
@@ -160,10 +186,6 @@
             font-style: normal;
             font-weight: 400;
             line-height: 48px; /* 100% */
-        }
-        .name_tag_1 {
-            top: -40px;
-            left: 170px;
         }
         .name_tag_2 {
             top: -80px;
@@ -183,12 +205,16 @@
             line-height: 60px;
             text-transform: uppercase;
         }
+        #status_1 {
+            left: 274px;
+            top: 60px;
+        }
         #status_2 {
             left: 320px;
             top: -79px;
         }
         #status_3 {
-            left: -92px;
+            left: -101px;
             top: -215px;
         }
 
@@ -300,8 +326,13 @@
             <div class="boxphoto_wrapper_1">
                 <img class="photo_person" id="photo_1" src="https://storage.googleapis.com/untukmu/assets/quizes/test/user_image.png" alt="">
             </div>
-            <div class="name_tag_1">
-                John
+            <div class="name_tag_wrapper_1">
+                <div class="name_tag_1">
+                    IFANNN
+                </div>
+            </div>
+            <div id="status_1">
+                GRAND-CHILD
             </div>
         </div>
         <div class="bottle_wrapper">
@@ -328,7 +359,7 @@
                 Alexandra
             </div>
             <div id="status_3">
-                Best-Friend
+                GRAND-CHILD
             </div>
         </div>
 
